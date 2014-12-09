@@ -1,0 +1,59 @@
+<html>
+	<head>
+		<title>Remote Island</title>
+		<meta charset="utf-8"/>
+		<style>
+			body
+			{
+				background-color : white;
+				margin : 0px;
+				background-color : #111;
+			}
+			canvas
+			{
+				box-shadow : 0px 0px 10px #000;
+				display : block;
+				margin : 10px auto;
+				background-color : #000;
+			}
+			h1
+			{
+				text-align : center;
+				font-family : sans-serif;
+				margin-top : 15px;
+				color : #FFF;
+			}
+			p
+			{
+				text-align : center;
+				font-family : sans-serif;
+				margin-top : 15px;
+				color : #888;
+			}
+			a
+			{
+			text-decoration : none;
+			color :#CCC;
+			}
+		</style>
+		<script src="howler.min.js"></script>
+		<script>
+			document.addEventListener("keydown", function(e){
+				if(e.which == 38 ||
+					e.which == 39 || 
+					e.which == 40 ||
+					e.which == 37 ||
+					e.which == 32)
+					e.preventDefault();
+			});
+		</script>
+	</head>
+	<body>
+		<h1>Remote Island</h1>
+		<canvas id="webgl" style="width:1024px; height:800px;">
+			Loading resources... Please wait...
+		</canvas>
+		<script type="text/javascript" src="main.js"></script>
+		<p>A game made by <a href="http://www.eolhing.me">Alix Fumoleau</a> for Ludum Dare #31.</p>
+	</body>
+</html>
